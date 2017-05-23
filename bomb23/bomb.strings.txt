@@ -1,0 +1,253 @@
+/lib64/ld-linux-x86-64.so.2
+__gmon_start__
+libc.so.6
+socket
+fflush
+strcpy
+exit
+sprintf
+fopen
+connect
+signal
+puts
+stdin
+fgets
+memset
+__errno_location
+read
+stdout
+memcpy
+__strtol_internal
+strcasecmp
+getenv
+__ctype_b_loc
+sscanf
+stderr
+alarm
+gethostbyname
+gethostname
+bcopy
+close
+fprintf
+sleep
+__libc_start_main
+write
+GLIBC_2.3
+GLIBC_2.2.5
+5B' 
+%D' 
+%B' 
+%:' 
+%2' 
+%*' 
+%"' 
+%z& 
+%r& 
+%j& 
+%b& 
+AWAVAUATUSH
+t$0M
+T$ H
+D$(H
+X[]A\A]A^A_
+ATUSH
+[]A\f
+SHc=
+***t
+runc
+ated
+ATUSH
+Erro
+r: C
+lien
+t un
+able
+ to 
+crea
+te s
+E ockef
+Erro
+r: D
+NS i
+s un
+able
+ to 
+reso
+lve 
+E serv
+E$er a
+E(ddref
+E,ss
+[]A\
+AWAVAUATUSH
+[]A\A]A^A_
+AWAVAUATUSH
+ErroA
+r: CA
+lienA
+t unA
+ableA
+ to A
+creaA
+te sA
+F ockefA
+ErroA
+r: DA
+NS iA
+s unA
+ableA
+ to A
+resoA
+lve A
+F servA
+F$er aA
+F(ddrefA
+F,ssA
+ErroA
+r: UA
+nablA
+e toA
+ conA
+nectA
+ to A
+the A
+F servfA
+F$erA
+ErroA
+r: RA
+esulA
+t stA
+ringA
+ tooA
+ larA
+ge. A
+F IncrA
+F$easeA
+F( SUBA
+F,MITRA
+F0_MAXA
+F4BUF
+D$ A
+D$!A
+D$"A
+ErroA
+r: RA
+esulA
+t stA
+ringA
+ conA
+tainA
+s anA
+F  illA
+F$egalA
+F( or A
+F,unprA
+F0intaA
+F4ble A
+F8charA
+F<actefA
+F@r.A
+ErroA
+r: CA
+lienA
+t unA
+ableA
+ to A
+writA
+e toA
+F  theA
+F$ serA
+F(ver
+ErroA
+r: CA
+lienA
+t unA
+ableA
+ to A
+readA
+ firA
+F st hA
+F$eadeA
+F(r frA
+F,om sA
+F0ervefA
+\$0H
+ErroA
+r: CA
+lienA
+t unA
+ableA
+ to A
+readA
+ staA
+F tus A
+F$messA
+F(age A
+F,fromA
+F0 serA
+F4ver
+ErroA
+r: CA
+lienA
+t unA
+ableA
+ to A
+readA
+ heaA
+F dersA
+F$ froA
+F(m seA
+F,rverA
+[]A\A]A^A_
+l$ L
+t$(L
+|$0H
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+That's number 2.  Keep going!
+Halfway there!
+Good work!  On to the next...
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+So you got that one.  Try this one.
+Wow! You've defused the secret stage!
+I am the mayor. I can do anything I want.
+Invalid phase%s
+defused
+exploded
+%d:%s:%d:%s
+%d %d %s
+DrEvil
+BOOM!!!
+The bomb has blown up.
+%d %d %d %d %d %d
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+Initialization error:
+Well...
+OK. :-)
+lnxsrv01.seas.ucla.edu
+lnxsrv02.seas.ucla.edu
+lnxsrv03.seas.ucla.edu
+lnxsrv04.seas.ucla.edu
+ERROR: Input string is too large.
+Curses, you've found the secret phase!
+But finding it and solving it are quite different...
+Congratulations! You've defused the bomb!
+Your instructor has been notified and will verify your solution.
+Your instructor has been notified.
+Initialization error: Running on an illegal host [1]
+Initialization error: Running on an illegal host [2]
+So you think you can stop the bomb with ctrl-c, do you?
+%%%02X
+%s %d %[a-zA-z ]
+AUTORESULT_STRING=%s
+bomblab
+csapp
+Error: Unable to connect to server %s
+Error: HTTP request failed with error %d: %s
+GET /%s/submitr.pl/?userid=%s&lab=%s&result=%s&submit=submit HTTP/1.0
+Program timed out after %d seconds
+304031039
