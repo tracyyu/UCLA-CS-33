@@ -1,0 +1,2 @@
+#!/bin/bash
+/space/CS33/spring2012/submission/check_results.pl $1

@@ -1,0 +1,336 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 61.39      1.49     1.49       41    36.24    36.24  quatRot
+ 37.21      2.39     0.90       48    18.76    29.10  get3DGaussianProb
+  0.41      2.40     0.01      136     0.07     0.07  fHorzcat
+  0.41      2.41     0.01       81     0.12     0.12  fMdivide
+  0.41      2.42     0.01                             fDivide
+  0.00      2.42     0.00     5602     0.00     0.00  iSetArray
+  0.00      2.42     0.00      290     0.00     0.00  eul2quat
+  0.00      2.42     0.00      247     0.00     0.00  fFreeHandle
+  0.00      2.42     0.00      247     0.00     0.00  fSetArray
+  0.00      2.42     0.00      247     0.00     0.00  fTimes
+  0.00      2.42     0.00      200     0.00     0.00  fDeepCopyRange
+  0.00      2.42     0.00      144     0.00    10.34  quatMul
+  0.00      2.42     0.00       98     0.00     0.00  fMtimes
+  0.00      2.42     0.00       51     0.00     0.00  iFreeHandle
+  0.00      2.42     0.00       48     0.00     6.57  entry_type2
+  0.00      2.42     0.00       40     0.00     0.00  fSum2
+  0.00      2.42     0.00       39     0.00     0.00  fMinus
+  0.00      2.42     0.00       39     0.00     0.00  fSum
+  0.00      2.42     0.00       39     0.00     0.00  weightedSample
+  0.00      2.42     0.00        2     0.00     0.00  randnWrapper
+  0.00      2.42     0.00        1     0.00     0.00  entry_type1
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.41% of 2.42 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     65.8    0.00    1.59                 entry_type4 [1]
+                0.75    0.41      40/48          get3DGaussianProb [4]
+                0.00    0.41      40/144         quatMul [2]
+                0.01    0.00      80/81          fMdivide [9]
+                0.00    0.00      40/136         fHorzcat [8]
+                0.00    0.00     840/5602        iSetArray [11]
+                0.00    0.00     200/290         eul2quat [12]
+                0.00    0.00     160/200         fDeepCopyRange [16]
+                0.00    0.00     120/247         fFreeHandle [13]
+                0.00    0.00      80/247         fTimes [15]
+                0.00    0.00      40/247         fSetArray [14]
+-----------------------------------------------
+                0.00    0.08       8/144         entry_type2 [7]
+                0.00    0.41      40/144         entry_type4 [1]
+                0.00    0.50      48/144         quatConj [5]
+                0.00    0.50      48/144         get3DGaussianProb [4]
+[2]     61.6    0.00    1.49     144         quatMul [2]
+                1.49    0.00      41/41          quatRot [3]
+                0.00    0.00      48/136         fHorzcat [8]
+                0.00    0.00     144/5602        iSetArray [11]
+                0.00    0.00      48/247         fFreeHandle [13]
+                0.00    0.00      48/290         eul2quat [12]
+                0.00    0.00      48/98          fMtimes [17]
+-----------------------------------------------
+                1.49    0.00      41/41          quatMul [2]
+[3]     61.5    1.49    0.00      41         quatRot [3]
+-----------------------------------------------
+                0.15    0.08       8/48          entry_type2 [7]
+                0.75    0.41      40/48          entry_type4 [1]
+[4]     57.8    0.90    0.50      48         get3DGaussianProb [4]
+                0.00    0.50      48/144         quatMul [2]
+                0.00    0.00     144/5602        iSetArray [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]     20.7    0.00    0.50                 quatConj [5]
+                0.00    0.50      48/144         quatMul [2]
+                0.00    0.00      48/136         fHorzcat [8]
+                0.00    0.00     240/5602        iSetArray [11]
+                0.00    0.00      48/98          fMtimes [17]
+-----------------------------------------------
+                                  88             entry_type3 [6]
+[6]     13.1    0.00    0.32       0+88      entry_type3 [6]
+                0.00    0.32      48/48          entry_type2 [7]
+                0.00    0.00       1/81          fMdivide [9]
+                0.00    0.00     103/5602        iSetArray [11]
+                0.00    0.00      39/39          weightedSample [22]
+                0.00    0.00       2/98          fMtimes [17]
+                0.00    0.00       2/2           randnWrapper [23]
+                0.00    0.00       1/1           entry_type1 [24]
+                0.00    0.00       1/290         eul2quat [12]
+                                  88             entry_type3 [6]
+-----------------------------------------------
+                0.00    0.32      48/48          entry_type3 [6]
+[7]     13.1    0.00    0.32      48         entry_type2 [7]
+                0.15    0.08       8/48          get3DGaussianProb [4]
+                0.00    0.08       8/144         quatMul [2]
+                0.00    0.00     374/5602        iSetArray [11]
+                0.00    0.00      40/247         fFreeHandle [13]
+                0.00    0.00       2/247         fSetArray [14]
+                0.00    0.00       2/247         fTimes [15]
+                0.00    0.00       2/290         eul2quat [12]
+                0.00    0.00       1/40          fSum2 [19]
+-----------------------------------------------
+                0.00    0.00      40/136         entry_type4 [1]
+                0.00    0.00      48/136         quatConj [5]
+                0.00    0.00      48/136         quatMul [2]
+[8]      0.4    0.01    0.00     136         fHorzcat [8]
+                0.00    0.00     136/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00       1/81          entry_type3 [6]
+                0.01    0.00      80/81          entry_type4 [1]
+[9]      0.4    0.01    0.00      81         fMdivide [9]
+                0.00    0.00      81/5602        iSetArray [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     0.4    0.01    0.00                 fDivide [10]
+-----------------------------------------------
+                                1549             iSetArray [11]
+                0.00    0.00       2/5602        randnWrapper [23]
+                0.00    0.00      10/5602        main [37]
+                0.00    0.00      40/5602        fSum2 [19]
+                0.00    0.00      78/5602        fSum [21]
+                0.00    0.00      81/5602        fMdivide [9]
+                0.00    0.00      88/5602        readFile [41]
+                0.00    0.00      98/5602        fMtimes [17]
+                0.00    0.00     103/5602        entry_type3 [6]
+                0.00    0.00     121/5602        entry_type1 [24]
+                0.00    0.00     136/5602        fHorzcat [8]
+                0.00    0.00     144/5602        quatMul [2]
+                0.00    0.00     144/5602        get3DGaussianProb [4]
+                0.00    0.00     160/5602        fDeepCopy [30]
+                0.00    0.00     200/5602        fDeepCopyRange [16]
+                0.00    0.00     231/5602        weightedSample [22]
+                0.00    0.00     240/5602        quatConj [5]
+                0.00    0.00     247/5602        fTimes [15]
+                0.00    0.00     334/5602        fSetArray [14]
+                0.00    0.00     374/5602        entry_type2 [7]
+                0.00    0.00     546/5602        generateSample [35]
+                0.00    0.00     840/5602        entry_type4 [1]
+                0.00    0.00    1385/5602        eul2quat [12]
+[11]     0.0    0.00    0.00    5602+1549    iSetArray [11]
+                0.00    0.00      51/51          iFreeHandle [18]
+                                1549             iSetArray [11]
+-----------------------------------------------
+                                 363             eul2quat [12]
+                0.00    0.00       1/290         entry_type3 [6]
+                0.00    0.00       2/290         entry_type2 [7]
+                0.00    0.00      39/290         generateSample [35]
+                0.00    0.00      48/290         quatMul [2]
+                0.00    0.00     200/290         entry_type4 [1]
+[12]     0.0    0.00    0.00     290+363     eul2quat [12]
+                0.00    0.00    1385/5602        iSetArray [11]
+                0.00    0.00     121/247         fSetArray [14]
+                0.00    0.00      48/247         fTimes [15]
+                                 363             eul2quat [12]
+-----------------------------------------------
+                0.00    0.00      39/247         weightedSample [22]
+                0.00    0.00      40/247         entry_type2 [7]
+                0.00    0.00      48/247         quatMul [2]
+                0.00    0.00     120/247         entry_type4 [1]
+[13]     0.0    0.00    0.00     247         fFreeHandle [13]
+-----------------------------------------------
+                0.00    0.00       2/247         entry_type2 [7]
+                0.00    0.00       6/247         randnWrapper [23]
+                0.00    0.00      39/247         weightedSample [22]
+                0.00    0.00      39/247         generateSample [35]
+                0.00    0.00      40/247         entry_type4 [1]
+                0.00    0.00     121/247         eul2quat [12]
+[14]     0.0    0.00    0.00     247         fSetArray [14]
+                0.00    0.00     334/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00       2/247         entry_type2 [7]
+                0.00    0.00      39/247         weightedSample [22]
+                0.00    0.00      48/247         eul2quat [12]
+                0.00    0.00      78/247         generateSample [35]
+                0.00    0.00      80/247         entry_type4 [1]
+[15]     0.0    0.00    0.00     247         fTimes [15]
+                0.00    0.00     247/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00      40/200         entry_type1 [24]
+                0.00    0.00     160/200         entry_type4 [1]
+[16]     0.0    0.00    0.00     200         fDeepCopyRange [16]
+                0.00    0.00     200/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00       2/98          entry_type3 [6]
+                0.00    0.00      48/98          quatConj [5]
+                0.00    0.00      48/98          quatMul [2]
+[17]     0.0    0.00    0.00      98         fMtimes [17]
+                0.00    0.00      98/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00      51/51          iSetArray [11]
+[18]     0.0    0.00    0.00      51         iFreeHandle [18]
+-----------------------------------------------
+                0.00    0.00       1/40          entry_type2 [7]
+                0.00    0.00      39/40          generateSample [35]
+[19]     0.0    0.00    0.00      40         fSum2 [19]
+                0.00    0.00      40/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00      39/39          generateSample [35]
+[20]     0.0    0.00    0.00      39         fMinus [20]
+-----------------------------------------------
+                0.00    0.00      39/39          generateSample [35]
+[21]     0.0    0.00    0.00      39         fSum [21]
+                0.00    0.00      78/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00      39/39          entry_type3 [6]
+[22]     0.0    0.00    0.00      39         weightedSample [22]
+                0.00    0.00     231/5602        iSetArray [11]
+                0.00    0.00      39/247         fSetArray [14]
+                0.00    0.00      39/247         fTimes [15]
+                0.00    0.00      39/247         fFreeHandle [13]
+-----------------------------------------------
+                0.00    0.00       2/2           entry_type3 [6]
+[23]     0.0    0.00    0.00       2         randnWrapper [23]
+                0.00    0.00       6/247         fSetArray [14]
+                0.00    0.00       2/5602        iSetArray [11]
+-----------------------------------------------
+                0.00    0.00       1/1           entry_type3 [6]
+[24]     0.0    0.00    0.00       1         entry_type1 [24]
+                0.00    0.00     121/5602        iSetArray [11]
+                0.00    0.00      40/200         fDeepCopyRange [16]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [24] entry_type1             [9] fMdivide                [4] get3DGaussianProb
+   [7] entry_type2            [20] fMinus                 [18] iFreeHandle
+  [12] eul2quat               [17] fMtimes                [11] iSetArray
+  [16] fDeepCopyRange         [14] fSetArray               [2] quatMul
+  [10] fDivide                [21] fSum                    [3] quatRot
+  [13] fFreeHandle            [19] fSum2                  [23] randnWrapper
+   [8] fHorzcat               [15] fTimes                 [22] weightedSample
