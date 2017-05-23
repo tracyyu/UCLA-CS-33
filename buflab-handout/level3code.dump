@@ -1,0 +1,9 @@
+
+level3code.o:     file format elf32-i386
+
+Disassembly of section .text:
+
+00000000 <.text>:
+   0:	b8 4f 03 47 43       	mov    $0x4347034f,%eax
+   5:	68 8d 8c 04 08       	push   $0x8048c8d
+   a:	c3                   	ret    
